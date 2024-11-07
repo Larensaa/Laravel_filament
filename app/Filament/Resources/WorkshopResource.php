@@ -123,7 +123,7 @@ public static function table(Table $table): Table
 
             Tables\Columns\TextColumn::make('price')
                 ->label('Price')
-                ->formatStateUsing(fn ($state) => 'IDR ' . number_format($state, 0)), // Format harga
+                ->formatStateUsing(fn ($state) => 'Rp ' . number_format($state, 0)), // Format harga
 
             Tables\Columns\TextColumn::make('category.name')
                 ->label('Category'),
